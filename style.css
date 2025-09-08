@@ -1,67 +1,41 @@
+/* Estilos para o corpo da página e para a tag html */
 body {
-    background-color: rgb(202, 190, 212);
-    font-family: bai jamjuree;
-}
-
-#container {
+    /* Define a altura total da tela */
+    height: 100vh;
+    /* Remove as margens padrão do navegador */
+    margin: 0;
+    /* Usa Flexbox para centralizar o conteúdo */
     display: flex;
+    /* Centraliza o conteúdo horizontalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo verticalmente */
+    align-items: center;
+    /* Define uma fonte para todo o corpo */
+    font-family: 'Cormorant Garamond', serif;
+    /* Cor do texto para combinar com o tema */
+    color: #4B382F;
+    /* Cor de fundo que simula madeira */
+    background-color: #D2B48C;
+    /* Adicione sua imagem de fundo aqui. Substitua a URL. */
+    background-image: url('https://seu-link-de-imagem-aqui.com/background.jpg');
+    /* Faz a imagem de fundo cobrir toda a tela */
+    background-size: cover;
+    /* Centraliza a imagem de fundo */
+    background-position: center;
+    /* Impede que a imagem de fundo se repita */
+    background-repeat: no-repeat;
 }
 
-.cartao {
-    margin: 1ren 1rem;
-    background-color: rgb(165, 101, 106);
-    height: 20rem;
-    flex-grow: 1;
-     flex-basis: calc(33% - 3rem);  
-}
-
-
-.cartao__conteudo {
+/* Estilos para o título (h1) */
+h1 {
+    /* Define o tamanho da fonte */
+    font-size: 5em;
+    /* Centraliza o texto do título */
     text-align: center;
-    background-color: rgb(202, 190, 212);
-     height: 100%;
-
+    /* Adiciona espaço interno ao redor do título */
+    padding: 20px;
+    /* Adiciona um fundo semi-transparente para o título */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Arredonda os cantos do fundo */
+    border-radius: 10px;
 }
-
-.cartao__conteudo h3 {
-    background-color: tomato;
-    text-align: left;
-     padding: 0.5rem;
-     position: absolute;
-     margin: 0.6rem;
-    border-radius:0.6rem;
-    font-size: 1vw;
-
-}
-
-body {
-    background: url('img/bg-desktop.webp');
-    font-family: Bai Jamjuree;
-} 
-
-
-
-
-
-
-
-
-footer {
-    background-color: black;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 2rem;
-}
-
-footer {
-    text-align: center;
-    font-size: 0.6rem;
-    margin-top: 0.5rem;
-}
-
-
-
-
-
