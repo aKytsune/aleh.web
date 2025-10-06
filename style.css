@@ -80,9 +80,9 @@
 }
 
 /* ------------------- RODAPÉ ------------------- */
-Story Coffe-container {
-    
-}
+<footer class="dourado-bg">
+    Story Coffe
+</footer>
 footer.dourado-bg {
     background-color: bisqueok;
     font-size: 0.2em;
