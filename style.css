@@ -8,22 +8,22 @@
 
 /* ------------------- CORES E FUNDOS ------------------- */
 
-/* Dourado para Cabeçalho e Rodapé */
+/* MARSALA para Cabeçalho, Rodapé e Menu */
 .dourado-bg {
-    background-color: #DAA520; /* Dourado */
-    color: #1a1a1a; /* Texto escuro no dourado */
+    background-color: #903040; /* Marsala (Tom profundo de vinho tinto) */
+    color: #ffffff; /* Texto claro no marsala */
     padding: 15px 20px;
     text-align: center;
 }
 
 /* Fundo Principal (Marrom com Rosa) */
 .marrom-rosa-bg {
-    /* Define o fundo como uma mistura de marrom e um rosa mais suave para ter o 'estilo' que você pediu */
+    /* Define o fundo como uma mistura de marrom e um rosa mais suave */
     background-color: #7b5840; /* Marrom de base */
     background-image: linear-gradient(135deg, #7b5840 50%, #D799A5 100%); /* Transição de marrom para rosa */
     color: #ffffff; /* Texto claro no fundo escuro */
     padding: 40px 20px;
-    min-height: 80vh; /* Garante que ocupe a maior parte da tela */
+    min-height: 80vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,50 +41,42 @@
     height: 150px;
     border-radius: 50%; /* Faz o formato de círculo */
     background-color: #ffffff; /* Fundo branco para destaque */
-    border: 5px solid #DAA520; /* Borda dourada */
+    border: 5px solid #903040; /* Borda MARSALA */
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Garante que a imagem da logo não saia do círculo */
+    overflow: hidden; 
     font-size: 1.2em;
     color: #333;
     font-weight: bold;
 }
 
-/* Se usar uma imagem, ela deve ser 100% do tamanho do círculo */
-.logo-circulo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
 /* ------------------- MENU ------------------- */
 
 .menu-container {
     display: flex;
-    gap: 15px; /* Espaço entre os retângulos */
+    gap: 15px; 
     margin-top: 40px;
     margin-bottom: 50px;
-    flex-wrap: wrap; /* Para quebrar a linha em telas menores */
+    flex-wrap: wrap; 
 }
 
 .menu-item {
-    text-decoration: none; /* Remove o sublinhado do link */
-    background-color: #DAA520; /* Retângulos Dourados */
-    color: #4F361E; /* Texto Marrom Escuro */
+    text-decoration: none; 
+    background-color: #903040; /* Retângulos MARSALA */
+    color: #ffffff; /* Texto branco no marsala */
     padding: 15px 25px;
-    width: 150px; /* Largura fixa para os retângulos */
+    width: 150px; 
     text-align: center;
     font-weight: bold;
-    border-radius: 5px; /* Cantos levemente arredondados */
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidade */
+    border-radius: 5px; 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Sombra um pouco mais forte para contraste */
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .menu-item:hover {
-    background-color: #ffc433; /* Dourado mais claro ao passar o mouse */
-    transform: translateY(-3px); /* Efeito sutil de levantar ao passar o mouse */
+    background-color: #a84758; /* Marsala mais claro ao passar o mouse */
+    transform: translateY(-3px); 
 }
 
 /* ------------------- RODAPÉ ------------------- */
