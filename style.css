@@ -19,8 +19,8 @@
 /* Fundo Principal (Marrom com Rosa) */
 .marrom-rosa-bg {
     /* Define o fundo como uma mistura de marrom e um rosa mais suave */
-    background-color: #7b5840; /* Marrom de base */
-    background-image: linear-gradient(135deg, #7b5840 50%, #D799A5 100%); /* Transição de marrom para rosa */
+    background-color: #191817; /* Marrom de base */
+    background-image: linear-gradient(135deg, #191817 50%, #191817 100%); /* Transição de marrom para rosa */
     color: #ffffff; /* Texto claro no fundo escuro */
     padding: 40px 20px;
     min-height: 80vh; 
