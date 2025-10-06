@@ -8,7 +8,7 @@
 
 /* ------------------- CORES E FUNDOS ------------------- */
 
-/* MARSALA para Cabeçalho, Rodapé e Menu */
+/* MARSALA para Cabeçalho, Rodapé e Menu (classe dourado-bg) */
 .dourado-bg {
     background-color: #903040; /* Marsala (Tom profundo de vinho tinto) */
     color: #ffffff; /* Texto claro no marsala */
@@ -41,7 +41,7 @@
     height: 150px;
     border-radius: 50%; /* Faz o formato de círculo */
     background-color: #ffffff; /* Fundo branco para destaque */
-    border: 5px solid #903040; /* Borda MARSALA */
+    border: 5px solid #903040; /* Borda AGORA é MARSALA */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,14 +63,14 @@
 
 .menu-item {
     text-decoration: none; 
-    background-color: #903040; /* Retângulos MARSALA */
+    background-color: #903040; /* Retângulos AGORA são MARSALA */
     color: #ffffff; /* Texto branco no marsala */
     padding: 15px 25px;
     width: 150px; 
     text-align: center;
     font-weight: bold;
     border-radius: 5px; 
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Sombra um pouco mais forte para contraste */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
     transition: background-color 0.3s, transform 0.3s;
 }
 
