@@ -3,26 +3,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    /* Fonte mais "fofa" e clássica de café */
+    font-family: 'Georgia', serif; 
 }
 
 /* ------------------- CORES E FUNDOS ------------------- */
 
-/* MARSALA para Cabeçalho, Rodapé e Menu (classe dourado-bg) */
+/* Marrom Suave (Mocca) para Cabeçalho, Rodapé e Menu (Substitui dourado-bg) */
 .dourado-bg {
-    background-color: #b73d3d; /* Marsala (Tom profundo de vinho tinto) */
-    color: #ffffff; /* Texto claro no marsala */
-    padding: 15px 20px;
+    background-color: #6D4C41; /* Mocca/Marrom Suave */
+    color: #F8F4E3; /* Texto Creme/Baunilha */
+    padding: 18px 20px;
     text-align: center;
+    /* Adiciona uma linha sutil para charme */
+    border-bottom: 2px solid #D7C378; 
 }
 
 
 .marrom-rosa-bg {
-    /* Define o fundo */
-    background-color: #191817; /* Marrom de base */
-    background-image: linear-gradient(135deg, #191817 50%, #191817 100%);
-    color: #ffffff; /* Texto claro no fundo escuro */
-    padding: 40px 20px;
+    /* Define o fundo: Creme Suave (Baunilha) */
+    background-color: #F8F4E3; 
+    color: #3E2723; /* Texto Marrom Escuro no fundo claro */
+    padding: 50px 20px;
     min-height: 80vh; 
     display: flex;
     flex-direction: column;
@@ -33,68 +35,77 @@
 /* ------------------- LOGO ------------------- */
 
 .logo-container {
-    margin-bottom: 30px;
-    /* AJUSTE: Centraliza o título e o círculo */
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column; 
     align-items: center;
 }
 
 .logo-titulo {
-    /* NOVO: Estilo para a frase "Story Coffe" acima do círculo */
-    font-size: 2.5em; 
-    color: #ffffff; 
-    font-weight: bold;
-    text-transform: uppercase; 
+    /* Fonte mais "fofa" e de máquina de escrever para contraste */
+    font-family: 'Courier New', monospace;
+    font-size: 2.8em; 
+    color: #3E2723; /* Marrom Escuro */
+    font-weight: normal;
+    text-transform: capitalize; /* Deixa mais suave que uppercase */
     margin-bottom: 15px; 
-    letter-spacing: 5px; 
+    letter-spacing: 2px; 
+    /* Efeito de destaque "Bonitinho" */
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
 }
 
 .logo-circulo {
-    width: 150px; /* Tamanho do círculo */
-    height: 150px;
-    border-radius: 50%; /* Faz o formato de círculo */
-    background-color: #ffffff; /* Fundo branco para destaque */
-    border: 5px solid #903040; /* Borda MARSALA */
+    width: 160px; /* Tamanho do círculo um pouco maior */
+    height: 160px;
+    border-radius: 50%; 
+    background-color: #D7C378; /* Fundo Bege Dourado Suave */
+    border: 8px solid #6D4C41; /* Borda Mocca/Marrom */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden; 
-    /* AJUSTE: Aumentei o tamanho da fonte para o texto interno (SC) */
-    font-size: 2.5em; 
-    color: #333;
+    font-size: 3em; 
+    color: #F8F4E3; /* Texto Baunilha */
     font-weight: bold;
+    /* Sombra suave para parecer um botão ou adesivo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 }
 
 /* ------------------- MENU ------------------- */
 
 .menu-container {
     display: flex;
-    gap: 15px; 
-    margin-top: 40px;
+    gap: 20px; /* Mais espaço entre os itens */
+    margin-top: 30px;
     margin-bottom: 50px;
     flex-wrap: wrap; 
 }
 
 .menu-item {
     text-decoration: none; 
-    background-color: #903040; /* Retângulos são MARSALA */
-    color: #ffffff; /* Texto branco no marsala */
-    padding: 15px 25px;
-    width: 150px; 
+    background-color: #C0A88D; /* Retângulos Bege Rosado (Cappuccino) */
+    color: #3E2723; /* Texto Marrom Escuro */
+    padding: 15px 30px;
+    width: 170px; /* Mais largo */
     text-align: center;
     font-weight: bold;
-    border-radius: 5px; 
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
-    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 20px; /* Bordas bem arredondadas (Mais Fofo!) */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    letter-spacing: 1px;
 }
 
 .menu-item:hover {
-    background-color: #a84758; /* Marsala mais claro ao passar o mouse */
-    transform: translateY(-3px); 
+    background-color: #D7C378; /* Bege Dourado Suave ao passar o mouse */
+    transform: translateY(-2px); /* Movimento mais sutil */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Sombra cresce */
 }
 
 /* ------------------- RODAPÉ ------------------- */
 footer.dourado-bg {
-    font-size: 0.2em;
+    /* Ajusta o padding para manter a altura da barra consistente */
+    padding: 15px 20px; 
+    font-size: 0.9em;
+    /* Garante que o texto, se houver, seja visível */
+    color: #F8F4E3; 
 }
