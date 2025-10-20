@@ -1,36 +1,131 @@
-<<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Story Coffe</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Story Coffee - Onde cada gole conta uma história</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="dourado-bg">
+    <header class="cabecalho">
+        <div class="logo-container">
+            <img src="logo.png" alt="Story Coffee Logo" class="logo">
+        </div>
+        <nav class="menu-navegacao">
+            <ul>
+                <li><a href="#historia">Nossa História</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="marrom-rosa-bg">
-        
-        <div class="logo-container">
-            <h1 class="logo-titulo">STORY COFFE</h1>
+    <main>
+        <section id="historia" class="secao-historia">
+            <h1>Story Coffee</h1>
+            <h2>Onde cada gole conta uma história</h2>
+            <p>
+                A Story Coffee nasceu de um sonho de unir a paixão por café de alta qualidade com o aconchego de um bom livro. 
+                Fundada em 2023, nossa cafeteria é um refúgio para quem busca mais do que uma bebida: busca uma experiência. 
+                Cada xícara é preparada com grãos selecionados e servida em um ambiente que convida à pausa, à leitura e à conversa. 
+                Acreditamos que, assim como uma boa história, um bom café deve ser degustado com calma e atenção. Venha criar seu próximo capítulo conosco.
+            </p>
+        </section>
 
-            <div class="logo-circulo">
-                SC
+        <section id="menu" class="secao-menu">
+            <h2>Nosso Menu</h2>
+            <div class="container-menu">
+                
+                <div class="categoria">
+                    <h3>Cafés Quentes</h3>
+                    <ul>
+                        <li>
+                            <h4>Café Filtrado</h4>
+                            <p>O clássico que nunca falha. Suave e aromático.</p>
+                            <span class="preco">R$ 8,00</span>
+                        </li>
+                        <li>
+                            <h4>Expresso Duplo</h4>
+                            <p>Dose extra de energia para começar o dia.</p>
+                            <span class="preco">R$ 10,00</span>
+                        </li>
+                        <li>
+                            <h4>Cappuccino Story</h4>
+                            <p>Expresso, leite vaporizado e um toque de chocolate.</p>
+                            <span class="preco">R$ 15,00</span>
+                        </li>
+                        <li>
+                            <h4>Latte Macchiato</h4>
+                            <p>Leite cremoso manchado com expresso.</p>
+                            <span class="preco">R$ 16,00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="categoria">
+                    <h3>Cafés Gelados & Especiais</h3>
+                    <ul>
+                        <li>
+                            <h4>Iced Latte de Caramelo</h4>
+                            <p>Café gelado com xarope de caramelo e creme.</p>
+                            <span class="preco">R$ 18,00</span>
+                        </li>
+                        <li>
+                            <h4>Story Pink Latte</h4>
+                            <p>Nosso café especial com notas frutadas e cor rosa natural!</p>
+                            <span class="preco">R$ 20,00</span>
+                        </li>
+                        <li>
+                            <h4>Affogato</h4>
+                            <p>Bola de sorvete de baunilha afogada no expresso.</p>
+                            <span class="preco">R$ 17,00</span>
+                        </li>
+                        <li>
+                            <h4>Mocha Gelado</h4>
+                            <p>Combinação perfeita de café, leite e chocolate cremoso.</p>
+                            <span class="preco">R$ 19,00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="categoria">
+                    <h3>Doces & Acompanhamentos</h3>
+                    <ul>
+                        <li>
+                            <h4>Bolo Red Velvet</h4>
+                            <p>Fatia aveludada com cobertura de cream cheese.</p>
+                            <span class="preco">R$ 16,50</span>
+                        </li>
+                        <li>
+                            <h4>Croissant de Amêndoas</h4>
+                            <p>Massa folhada e crocante, recheio caseiro.</p>
+                            <span class="preco">R$ 14,00</span>
+                        </li>
+                        <li>
+                            <h4>Waffle com Frutas Vermelhas</h4>
+                            <p>Servido quente com chantilly e calda.</p>
+                            <span class="preco">R$ 22,00</span>
+                        </li>
+                        <li>
+                            <h4>Muffin de Chocolate Belga</h4>
+                            <p>Úmido e com gotas de chocolate meio amargo.</p>
+                            <span class="preco">R$ 12,00</span>
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
-        </div>
-
-        <nav class="menu-container">
-            <a href="menu.html" class="menu-item">MENU</a>
-            <a href="3d.html" class="menu-item">3D</a>
-            <a href="historia.html" class="menu-item">HISTÓRIA</a>
-            <a href="orcamento.html" class="menu-item">ORÇAMENTO</a>
-        </nav>
+        </section>
 
     </main>
 
-    <footer class="dourado-bg">
-    
+    <footer id="contato" class="rodape">
+        <p>&copy; 2025 Story Coffee. Todos os direitos reservados.</p>
+        <p>Rua das Histórias, 123 - Centro | Telefone: (99) 99999-9999</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

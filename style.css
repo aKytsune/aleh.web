@@ -1,111 +1,176 @@
-/* Reset básico para remover margens e paddings padrão */
+/* Definição das variáveis de cores Marrom e Rosa */
+:root {
+    --cor-marrom-escuro: #4E342E; /* Marrom para fundo e cabeçalho */
+    --cor-marrom-medio: #795548; /* Marrom mais suave para detalhes */
+    --cor-rosa-acento: #E91E63; /* Rosa vibrante para destaque e preços */
+    --cor-rosa-clara: #F8BBD0; /* Rosa pastel para fundo de seções */
+    --cor-fundo: #FFF8E1; /* Creme/Bege bem claro (Quase Branco) */
+    --cor-texto-escuro: #3E2723; /* Marrom bem escuro para textos */
+}
+
+/* Aplica fontes mais elegantes se o usuário tiver as fontes Playfair Display e Roboto */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Fonte mais "fofa" e clássica de café */
-    font-family: 'Georgia', serif; 
+    font-family: 'Roboto', sans-serif; 
 }
 
-/* ------------------- CORES E FUNDOS ------------------- */
-
-/* Marrom Suave (Mocca) para Cabeçalho, Rodapé e Menu (Substitui dourado-bg) */
-.dourado-bg {
-    background-color: #6D4C41; /* Mocca/Marrom Suave */
-    color: #F8F4E3; /* Texto Creme/Baunilha */
-    padding: 18px 20px;
-    text-align: center;
-    /* Adiciona uma linha sutil para charme */
-    border-bottom: 2px solid #D7C378; 
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-escuro);
+    line-height: 1.6;
 }
 
-
-.marrom-rosa-bg {
-    /* Define o fundo: Creme Suave (Baunilha) */
-    background-color: #F8F4E3; 
-    color: #3E2723; /* Texto Marrom Escuro no fundo claro */
-    padding: 50px 20px;
-    min-height: 80vh; 
+/* ------------------- CABEÇALHO E NAVEGAÇÃO ------------------- */
+.cabecalho {
+    background-color: var(--cor-marrom-escuro);
+    color: white;
+    padding: 15px 5%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* ------------------- LOGO ------------------- */
+.logo {
+    height: 60px; /* Ajuste o tamanho da logo aqui */
+    /* Se a sua logo for branca, não precisa de filtro. Se for escura, use: */
+    /* filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)); */
+}
 
-.logo-container {
+.menu-navegacao ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-navegacao ul li {
+    margin-left: 25px;
+}
+
+.menu-navegacao ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.menu-navegacao ul li a:hover {
+    color: var(--cor-rosa-acento); /* Destaque Rosa no hover */
+}
+
+/* ------------------- SEÇÕES GERAIS ------------------- */
+main {
+    padding: 40px 5%;
+}
+
+section {
+    padding: 60px 0;
     margin-bottom: 40px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
+    background-color: white; /* Fundo branco para seções */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-.logo-titulo {
-    /* Fonte mais "fofa" e de máquina de escrever para contraste */
-    font-family: 'Courier New', monospace;
-    font-size: 2.8em; 
-    color: #3E2723; /* Marrom Escuro */
-    font-weight: normal;
-    text-transform: capitalize; /* Deixa mais suave que uppercase */
-    margin-bottom: 15px; 
-    letter-spacing: 2px; 
-    /* Efeito de destaque "Bonitinho" */
-    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
-}
-
-.logo-circulo {
-    width: 160px; /* Tamanho do círculo um pouco maior */
-    height: 160px;
-    border-radius: 50%; 
-    background-color: #D7C378; /* Fundo Bege Dourado Suave */
-    border: 8px solid #6D4C41; /* Borda Mocca/Marrom */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; 
-    font-size: 3em; 
-    color: #F8F4E3; /* Texto Baunilha */
-    font-weight: bold;
-    /* Sombra suave para parecer um botão ou adesivo */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-}
-
-/* ------------------- MENU ------------------- */
-
-.menu-container {
-    display: flex;
-    gap: 20px; /* Mais espaço entre os itens */
-    margin-top: 30px;
-    margin-bottom: 50px;
-    flex-wrap: wrap; 
-}
-
-.menu-item {
-    text-decoration: none; 
-    background-color: #C0A88D; /* Retângulos Bege Rosado (Cappuccino) */
-    color: #3E2723; /* Texto Marrom Escuro */
-    padding: 15px 30px;
-    width: 170px; /* Mais largo */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: var(--cor-marrom-escuro); /* Título Principal em Marrom Escuro */
     text-align: center;
-    font-weight: bold;
-    border-radius: 20px; /* Bordas bem arredondadas (Mais Fofo!) */
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
-.menu-item:hover {
-    background-color: #D7C378; /* Bege Dourado Suave ao passar o mouse */
-    transform: translateY(-2px); /* Movimento mais sutil */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Sombra cresce */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    color: var(--cor-rosa-acento); /* Títulos de Seção em Rosa */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* ------------------- SEÇÃO HISTÓRIA ------------------- */
+.secao-historia p {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1.15em;
+    padding: 0 30px;
+}
+
+/* ------------------- SEÇÃO MENU ------------------- */
+.secao-menu {
+    background-color: var(--cor-rosa-clara); /* Fundo Rosa Claro para a seção de menu */
+}
+
+.container-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 0 30px;
+}
+
+.categoria {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categoria h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--cor-marrom-medio); /* Título da Categoria em Marrom Médio */
+    border-bottom: 3px solid var(--cor-rosa-acento); /* Linha de Rosa */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.categoria ul {
+    list-style: none;
+}
+
+.categoria li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 0;
+    border-bottom: 1px dashed var(--cor-marrom-medio);
+}
+
+.categoria li:last-child {
+    border-bottom: none;
+}
+
+.categoria h4 {
+    color: var(--cor-texto-escuro);
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.categoria p {
+    font-size: 1em;
+    color: var(--cor-marrom-medio);
+}
+
+.preco {
+    font-weight: bold;
+    color: var(--cor-rosa-acento); /* Preço em Rosa */
+    font-size: 1.3em;
+    min-width: 80px; 
+    text-align: right;
 }
 
 /* ------------------- RODAPÉ ------------------- */
-footer.dourado-bg {
-    /* Ajusta o padding para manter a altura da barra consistente */
-    padding: 15px 20px; 
-    font-size: 0.9em;
-    /* Garante que o texto, se houver, seja visível */
-    color: #F8F4E3; 
+.rodape {
+    background-color: var(--cor-marrom-escuro);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 1em;
+}
+
+.rodape p {
+    margin: 5px 0;
 }
